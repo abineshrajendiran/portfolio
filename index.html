@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#05070f">
+<title>Abinesh R | Backend Developer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+  <div class="wrap nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-img" id="logoImg">
+        <img src="./abinesh.jpeg" alt="Abinesh R" onerror="this.remove();document.getElementById('logoImg').textContent=''">
+      </span>
+      <span class="logo-text">ABINESH R<small>BACKEND DEVELOPER</small></span>
+    </a>
+    <button class="burger" onclick="toggleMenu()" aria-label="Menu"><i class="bi bi-list"></i></button>
+    <ul class="menu" id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certs">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HOME ================= -->
+<section id="home">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Hi, I'm <span>Abinesh R</span></h1>
+        <div class="typing" id="typing"></div>
+        <p>Aspiring Software Developer with a strong foundation in Java, SQL, HTML, CSS, and JavaScript. Focused on developing responsive websites and efficient applications, solving real-world problems, and continuously enhancing technical skills to deliver quality software solutions.</p>
+        <div class="btns">
+          <a href="#projects" class="btn fill"><i class="bi bi-rocket-takeoff"></i> View Projects</a>
+          <a href="#contact" class="btn line"><i class="bi bi-envelope"></i> Contact Me</a>
+        </div>
+      </div>
+
+      <div class="photo-box">
+        <div class="frame">
+          <img src="./abinesh.jpeg" alt="Abinesh R"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <div class="initials"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="card stat"><b data-count="6">0</b><span>Projects Built</span></div>
+      <div class="card stat"><b data-count="6">0</b><span>Technologies Used</span></div>
+      <div class="card stat"><b>8.28</b><span>CGPA</span></div>
+      <div class="card stat"><b data-count="7">0</b><span>Certifications</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="title reveal"><h2>ABOUT <span>ME</span></h2><p>My professional profile</p></div>
+    <div class="about-grid">
+      <div class="card reveal">
+        <h4 style="color:var(--cyan);margin-bottom:12px">Professional Summary</h4>
+        <p>Motivated and detail-oriented fresher with a strong foundation in Java, Object-Oriented Programming, SQL, MySQL, HTML and CSS. Skilled in developing applications, writing efficient database queries and creating structured web pages. I have good problem-solving abilities and a willingness to learn new technologies. Seeking an opportunity to start my career in a dynamic organization where I can contribute and grow as a developer.</p>
+      </div>
+      <div class="card reveal">
+        <h4 style="color:var(--cyan);margin-bottom:12px">Quick Info</h4>
+        <div class="info-row"><span>Location</span><span>Chennai, India</span></div>
+        <div class="info-row"><span>Degree</span><span>B.E. CSE (2026)</span></div>
+        <div class="info-row"><span>Target Role</span><span>Full stack developer</span></div>
+        <div class="info-row"><span>Email</span><span>abineshr599@gmail.com</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="wrap">
+    <div class="title reveal"><h2>TECH <span>STACK</span></h2><p>Technologies, languages and tools</p></div>
+    <div class="skill-grid">
+      <div class="card reveal">
+        <h4>FRONTEND</h4>
+        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+      </div>
+      <div class="card reveal">
+        <h4>BACKEND</h4>
+        <span class="tag">Java</span><span class="tag">Core Java</span><span class="tag">OOP</span><span class="tag">JDBC</span><span class="tag">J2EE</span><span class="tag">Exception Handling</span>
+      </div>
+      <div class="card reveal">
+        <h4>DATABASE</h4>
+        <span class="tag">MySQL</span><span class="tag">Oracle SQL</span>
+      </div>
+      <div class="card reveal">
+        <h4>TOOLS</h4>
+        <span class="tag">Eclipse</span><span class="tag">VS Code</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Postman</span><span class="tag">Notepad++</span><span class="tag">Netlify</span><span class="tag">Vercel</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="title reveal"><h2>MY <span>PROJECTS</span></h2><p>Try the Java demos right here, or open my live websites</p></div>
+
+    <!-- ========== 1. VOTING ========== -->
+    <div class="card project reveal">
+      <div class="project-head">
+        <i class="bi bi-check2-square big"></i>
+        <div class="project-body">
+          <h3>Online Voting System</h3>
+          <div class="stack">Core Java • OOP • JDBC</div>
+          <p>A Java voting application that manages voters and candidates, lets users cast votes, prevents duplicate voting and shows election results.</p>
+          <ul>
+            <li><b>Voter Management</b> – handles voter information</li>
+            <li><b>Duplicate Vote Prevention</b> – one voter, one vote</li>
+            <li><b>Result Management</b> – counts votes and shows results</li>
+          </ul>
+          <div class="btns">
+            <a class="btn fill" onclick="toggleDemo('demo1')"><i class="bi bi-play-circle"></i> Live Demo</a>
+            <a class="btn line" href="https://github.com/abineshrajendiran/Online-voting-system-" target="_blank" rel="noopener"><i class="bi bi-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo" id="demo1">
+        <h4>VOTING DEMO</h4>
+        <p class="note">Browser simulation of the project logic. Try voting twice with the same Voter ID.</p>
+        <div class="row">
+          <input type="text" id="voterId" placeholder="Voter ID (e.g. SYK2121150)">
+          <select id="candidate">
+            <option value="">-- Select Candidate --</option>
+            <option value="Edappadi K. Palaniswami">Edappadi K. Palaniswami</option>
+            <option value="Anbumani Ramadoss">Anbumani Ramadoss</option>
+            <option value="Narendra Damodardas Modi">Narendra Damodardas Modi</option>
+            <option value="Rahul Gandhi">Rahul Gandhi</option>
+            <option value="T. Velmurugan">T. Velmurugan</option>
+            <option value="Muthuvel Karunanidhi Stalin">Muthuvel Karunanidhi Stalin</option>
+            <option value="Seeman">Seeman</option>
+            <option value="Joseph Vijay">Joseph Vijay</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        <div class="row">
+          <button onclick="castVote()">Cast Vote</button>
+          <button class="alt" onclick="resetVotes()">Reset</button>
+        </div>
+        <div class="msg" id="voteMsg"></div>
+        <div id="voteResults"></div>
+      </div>
+    </div>
+
+    <!-- ========== 2. LIBRARY ========== -->
+    <div class="card project reveal">
+      <div class="project-head">
+        <i class="bi bi-book big"></i>
+        <div class="project-body">
+          <h3>Library Management System</h3>
+          <div class="stack">Core Java • OOP • JDBC</div>
+          <p>Manages students, books, issue and return, and fine calculation, with separate Staff and Member login modules.</p>
+          <ul>
+            <li><b>Book Issue / Return</b> – tracks availability</li>
+            <li><b>Fine Calculation</b> – for overdue returns</li>
+            <li><b>Staff &amp; Member Login</b> – separate modules</li>
+          </ul>
+          <div class="btns">
+            <a class="btn fill" onclick="toggleDemo('demo2')"><i class="bi bi-play-circle"></i> Live Demo</a>
+            <a class="btn line" href="https://github.com/abineshrajendiran/Library-Management-System-LMS-" target="_blank" rel="noopener"><i class="bi bi-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo" id="demo2">
+        <h4>LIBRARY DEMO</h4>
+        <p class="note">100 books: Epics, Tamil Classics, Novels, Journeys, Engineering and TN State Board. Fine = Rs. 2 per day after 7 days.</p>
+
+        <div class="row full">
+          <input type="text" id="bookSearch" placeholder="Search book / author / category" oninput="renderBooks()">
+        </div>
+        <div class="row">
+          <select id="bookSelect"></select>
+          <button onclick="issueBook()">Issue Book</button>
+        </div>
+        <div class="row">
+          <input type="number" id="daysKept" min="1" placeholder="Days kept">
+          <button onclick="returnBook()">Return Book</button>
+        </div>
+
+        <div class="msg" id="libMsg"></div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Book</th><th>Author</th><th>Category</th><th>Status</th></tr></thead>
+            <tbody id="bookTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== 3. DSK AGENCY ========== -->
+    <div class="card project web reveal">
+      <div class="mock">
+        <div class="mock-bar"><i></i><i></i><i></i><span>dskagency.netlify.app</span></div>
+        <div class="mock-body">DSK AGENCY</div>
+      </div>
+      <div class="project-body">
+        <h3>DSK Agency Website <span class="new-tag">LIVE</span></h3>
+        <div class="stack">HTML • CSS • JavaScript</div>
+        <p>A responsive business website for DSK Agency that presents the agency, its services and contact details in a clean, mobile-friendly layout.</p>
+        <ul>
+          <li><b>Responsive Design</b> – works on mobile, tablet and desktop</li>
+          <li><b>Services Section</b> – clear presentation of what the agency offers</li>
+          <li><b>Contact Details</b> – easy ways for customers to reach out</li>
+        </ul>
+        <div class="btns">
+          <a class="btn fill" id="dskLive" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+          <a class="btn line" id="dskCode" target="_blank" rel="noopener"><i class="bi bi-github"></i> Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== 4. AL BASHA SHOE MART ========== -->
+    <div class="card project web reveal">
+      <div class="mock">
+        <div class="mock-bar"><i></i><i></i><i></i><span>albashashoesmarts.netlify.app</span></div>
+        <div class="mock-body b2">AL BASHA SHOE MART</div>
+      </div>
+      <div class="project-body">
+        <h3>Al Basha Shoe Mart <span class="new-tag">LIVE</span></h3>
+        <div class="stack">HTML • CSS • JavaScript</div>
+        <p>A responsive shop website for Al Basha Shoe Mart that shows the store's shoe collections and contact information in a modern, easy-to-browse design.</p>
+        <ul>
+          <li><b>Product Showcase</b> – shoe collections presented in clean cards</li>
+          <li><b>Mobile Friendly</b> – layout adjusts properly on phones</li>
+          <li><b>Store Contact</b> – customers can easily find and contact the shop</li>
+        </ul>
+        <div class="btns">
+          <a class="btn fill" id="bashaLive" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+          <a class="btn line" id="bashaCode" target="_blank" rel="noopener"><i class="bi bi-github"></i> Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== 5. NEW BASHA SHOE MART ========== -->
+    <div class="card project web reveal">
+      <div class="mock">
+        <div class="mock-bar"><i></i><i></i><i></i><span>new-basha-shoe-mart.netlify.app</span></div>
+        <div class="mock-body b3">NEW BASHA SHOE MART</div>
+      </div>
+      <div class="project-body">
+        <h3>New Basha Shoe Mart <span class="new-tag">NEW</span></h3>
+        <div class="stack">HTML • CSS • JavaScript</div>
+        <p>A fresh, updated version of the Basha Shoe Mart website with a modern look, clear product sections and an easy-to-use layout on every screen size.</p>
+        <ul>
+          <li><b>Modern Design</b> – cleaner, more attractive layout</li>
+          <li><b>Product Showcase</b> – shoes displayed in organised cards</li>
+          <li><b>Fully Responsive</b> – comfortable on mobile and laptop</li>
+        </ul>
+        <div class="btns">
+          <a class="btn fill" id="newBashaLive" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+          <a class="btn line" id="newBashaCode" target="_blank" rel="noopener"><i class="bi bi-github"></i> Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== 6. SHOPPING DB ========== -->
+    <div class="card project reveal">
+      <div class="project-head">
+        <i class="bi bi-database big"></i>
+        <div class="project-body">
+          <h3>Online Shopping Database</h3>
+          <div class="stack">SQL • MySQL</div>
+          <p>Relational database for customers, products, orders, payments and inventory using primary and foreign keys, joins and constraints.</p>
+          <ul>
+            <li><b>Table Relationships</b> – primary and foreign keys</li>
+            <li><b>SQL Operations</b> – INSERT, UPDATE, DELETE, SELECT</li>
+            <li><b>Reporting</b> – JOIN, GROUP BY, ORDER BY, aggregates</li>
+          </ul>
+          <div class="btns">
+            <a class="btn fill" onclick="toggleDemo('demo3')"><i class="bi bi-play-circle"></i> Live Demo</a>
+            <a class="btn line" href="https://github.com/abineshrajendiran/OnlineShoppingDB" target="_blank" rel="noopener"><i class="bi bi-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo" id="demo3">
+        <h4>SQL QUERY DEMO</h4>
+        <p class="note">Pick a query to see the result on sample data.</p>
+        <div class="row">
+          <select id="querySelect" onchange="runQuery()">
+            <option value="0">All products</option>
+            <option value="1">Products under Rs. 1000</option>
+            <option value="2">Orders joined with customer names</option>
+            <option value="3">Total spent per customer</option>
+          </select>
+        </div>
+        <code class="sql" id="sqlText"></code>
+        <div class="table-scroll" id="sqlResult"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="title reveal"><h2>EXPERI<span>ENCE</span></h2><p>Internship experience</p></div>
+    <div class="timeline">
+      <div class="t-item reveal card">
+        <h4>Java Application Development Intern</h4>
+        <div class="sub">Samcore Solution, Trichy</div>
+        <p>Gained hands-on experience in Core Java, SQL and HTML by developing basic applications, writing database queries, designing web pages and helping with debugging. Worked with team members on assigned tasks and maintained project documentation.</p>
+        <ul class="exp-points">
+          <li>Developed basic Java applications using Core Java and Object-Oriented Programming (OOP) concepts.</li>
+          <li>Worked with SQL and MySQL to manage and retrieve database information.</li>
+          <li>Practiced debugging, error handling, and solving programming problems.</li>
+          <li>Gained practical knowledge of software development and database operations.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+  <div class="wrap">
+    <div class="title reveal"><h2>EDUC<span>ATION</span></h2><p>My academic background</p></div>
+    <div class="timeline">
+      <div class="t-item reveal card">
+        <h4>B.E. Computer Science and Engineering</h4>
+        <div class="sub">AKT Memorial College of Engineering and Technology</div>
+        <p>2022 – 2026 &nbsp;|&nbsp; CGPA: 8.28 / 10</p>
+      </div>
+      <div class="t-item reveal card">
+        <h4>Higher Secondary Certificate (Class XII)</h4>
+        <div class="sub">Jayapriya Vidyalaya Matric Higher Secondary School</div>
+        <p>2021 – 2022 &nbsp;|&nbsp; 67%</p>
+      </div>
+      <div class="t-item reveal card">
+        <h4>Secondary School Leaving Certificate (Class X)</h4>
+        <div class="sub">Jayapriya Vidyalaya Matric Higher Secondary School</div>
+        <p>2019 – 2020 &nbsp;|&nbsp; 87%</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certs">
+  <div class="wrap">
+    <div class="title reveal"><h2>CERTIFI<span>CATIONS</span></h2><p>Courses and professional certifications</p></div>
+    <div class="cert-grid">
+      <div class="card cert reveal"><i class="bi bi-award"></i><h4>Java Developer</h4><p>Java Development Certification</p><a href="https://verify.onwingspan.com/" target="_blank" rel="noopener">View Certificate</a></div>
+      <div class="card cert reveal"><i class="bi bi-shield-check"></i><h4>Introduction to Cybersecurity</h4><p>Cisco</p><a href="https://www.credly.com/badges/132a2a43-c98d-49f8-a8dc-b64df4b3a708" target="_blank" rel="noopener">View Certificate</a></div>
+      <div class="card cert reveal"><i class="bi bi-bar-chart"></i><h4>Data Analytics</h4><p>Google</p><a href="https://www.credly.com/badges/a06860b7-7725-4b43-b1a1-3e15ed36643e" target="_blank" rel="noopener">View Certificate</a></div>
+      <div class="card cert reveal"><i class="bi bi-cloud"></i><h4>Cloud Engineering</h4><p>Google</p><a href="https://www.credly.com/badges/7083fe43-1768-409d-b8df-3a15c762fef3" target="_blank" rel="noopener">View Certificate</a></div>
+      <div class="card cert reveal"><i class="bi bi-filetype-html"></i><h4>HTML5 - The Language</h4><p>Web Development</p><a href="https://verify.onwingspan.com/" target="_blank" rel="noopener">View Certificate</a></div>
+      <div class="card cert reveal"><i class="bi bi-robot"></i><h4>AI Fundamentals</h4><p>IBM</p><a href="https://www.credly.com/badges/778fa157-613b-4cf6-9b13-4ae65a59c8a9" target="_blank" rel="noopener">View Certificate</a></div>
+      <div class="card cert reveal"><i class="bi bi-gear"></i><h4>Robotic Process Automation</h4><p>RPA Training</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="title reveal"><h2>GET IN <span>TOUCH</span></h2><p>Open to job opportunities and collaboration</p></div>
+    <div class="contact-grid">
+      <div class="card reveal">
+        <h4 style="color:var(--cyan);margin-bottom:20px">Contact Details</h4>
+        <div class="c-item"><i class="bi bi-telephone"></i><a href="tel:+919344040239">+91 9344040239</a></div>
+        <div class="c-item"><i class="bi bi-envelope"></i><a href="mailto:abineshr599@gmail.com">abineshr599@gmail.com</a></div>
+        <div class="c-item"><i class="bi bi-github"></i><a href="https://github.com/abineshrajendiran" target="_blank" rel="noopener">GitHub</a></div>
+        <div class="c-item"><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/abinesh-rajendiran-5319ba309" target="_blank" rel="noopener">LinkedIn</a></div>
+        <div class="c-item"><i class="bi bi-whatsapp"></i><a href="https://wa.me/919344040239" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="c-item"><i class="bi bi-instagram"></i><a href="https://www.instagram.com/its_me_lovely_abinesh_.r/" target="_blank" rel="noopener">Instagram</a></div>
+         <div class="c-item"><i class="bi bi-facebook"></i><a href="https://www.facebook.com/share/1LWA3Yn2og/" target="_blank" rel="noopener">Facebook</a></div>
+         <div class="c-item"><i class="bi bi-patch-check-fill"></i><a href="https://www.credly.com/users/abinesh-r.1b9000a8" target="_blank" rel="noopener">Credly</a></div>
+        <div class="c-item"><i class="bi bi-journal-text"></i><a href="https://dev.to/@abineshrajendiran" target="_blank" rel="noopener">Blogs (dev.to)</a></div>
+        <div class="c-item"><i class="bi bi-geo-alt"></i><span>Chennai, Tamil Nadu, India</span></div>
+      </div>
+
+      <div class="card reveal">
+        <h4 style="color:var(--cyan);margin-bottom:20px">Send Message</h4>
+        <form class="form" id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="subject" placeholder="Subject" required>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn fill"><i class="bi bi-send"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 <span>Abinesh Rajendiran</span> | Portfolio</footer>
+<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+<script src="./Script.js"></script>
+</body>
+</html>
