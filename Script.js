@@ -2,6 +2,8 @@
    PROJECT LINKS
 ===================================================== */
 var LINKS = {
+  schoolwebsiteslive:"https://graabineshrajendiran-school.netlify.app",
+  schoolwebsitescode:"https://github.com/abineshrajendiran/School-Websites",
   dskLive:      "https://dskagency.netlify.app",
   dskCode:      "https://github.com/abineshrajendiran/DSK-Agency-Business-",
   bashaLive:    "https://albashashoesmarts.netlify.app",
@@ -23,32 +25,32 @@ for (var id in LINKS) {
 }
 
 /* ---------- Mobile menu ---------- */
-function toggleMenu() {
+function toggleMenu(){
   document.getElementById("menu").classList.toggle("open");
 }
-document.querySelectorAll(".menu a").forEach(function (a) {
-  a.addEventListener("click", function () {
+document.querySelectorAll(".menu a").forEach(function(a){
+  a.addEventListener("click", function(){
     document.getElementById("menu").classList.remove("open");
   });
 });
 
 /* ---------- Typing effect ---------- */
-var words = ["Aspiring Backend Developer", "Java Developer", "Web Developer", "SQL & MySQL", "Problem Solving"];
+var words = ["Aspiring Backend Developer", "Java Developer", "SQL & MySQL Enthusiast", "Web Developer"];
 var w = 0, c = 0, deleting = false;
-function type() {
+function type(){
   var current = words[w];
   document.getElementById("typing").textContent = current.substring(0, c);
-  if (!deleting && c < current.length) { c++; setTimeout(type, 90); }
-  else if (!deleting) { deleting = true; setTimeout(type, 1400); }
-  else if (c > 0) { c--; setTimeout(type, 45); }
+  if(!deleting && c < current.length){ c++; setTimeout(type, 90); }
+  else if(!deleting){ deleting = true; setTimeout(type, 1400); }
+  else if(c > 0){ c--; setTimeout(type, 45); }
   else { deleting = false; w = (w + 1) % words.length; setTimeout(type, 300); }
 }
 type();
 
 /* ---------- Scroll reveal ---------- */
-function reveal() {
-  document.querySelectorAll(".reveal").forEach(function (el) {
-    if (el.getBoundingClientRect().top < window.innerHeight - 40) {
+function reveal(){
+  document.querySelectorAll(".reveal").forEach(function(el){
+    if(el.getBoundingClientRect().top < window.innerHeight - 40){
       el.classList.add("show");
     }
   });
@@ -56,32 +58,32 @@ function reveal() {
 
 /* ---------- Counter animation ---------- */
 var counted = false;
-function runCounters() {
-  if (counted) return;
+function runCounters(){
+  if(counted) return;
   var box = document.querySelector(".stats");
-  if (box.getBoundingClientRect().top < window.innerHeight) {
+  if(box.getBoundingClientRect().top < window.innerHeight){
     counted = true;
-    document.querySelectorAll("[data-count]").forEach(function (el) {
-      var target = parseInt(el.getAttribute("data-count"), 10);
+    document.querySelectorAll("[data-count]").forEach(function(el){
+      var target = parseInt(el.getAttribute("data-count"));
       var n = 0;
-      var t = setInterval(function () {
+      var t = setInterval(function(){
         n++;
         el.textContent = n + "+";
-        if (n >= target) clearInterval(t);
+        if(n >= target) clearInterval(t);
       }, 150);
     });
   }
 }
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function(){
   document.getElementById("topBtn").style.display = window.scrollY > 400 ? "block" : "none";
   reveal();
   runCounters();
 });
-window.addEventListener("load", function () { reveal(); runCounters(); });
+window.addEventListener("load", function(){ reveal(); runCounters(); });
 
 /* ---------- Demo panels ---------- */
-function toggleDemo(id) {
+function toggleDemo(id){
   document.getElementById(id).classList.toggle("open");
 }
 
@@ -382,15 +384,15 @@ var queries = [
   }
 ];
 
-function runQuery() {
+function runQuery(){
   var q = queries[document.getElementById("querySelect").value];
   document.getElementById("sqlText").textContent = q.sql;
   var html = "<table><thead><tr>";
-  q.head.forEach(function (h) { html += "<th>" + h + "</th>"; });
+  q.head.forEach(function(h){ html += "<th>" + h + "</th>"; });
   html += "</tr></thead><tbody>";
-  q.rows.forEach(function (r) {
+  q.rows.forEach(function(r){
     html += "<tr>";
-    r.forEach(function (cell) { html += "<td>" + cell + "</td>"; });
+    r.forEach(function(cell){ html += "<td>" + cell + "</td>"; });
     html += "</tr>";
   });
   html += "</tbody></table>";
@@ -401,7 +403,7 @@ runQuery();
 /* =====================================================
    CONTACT FORM (opens your email app)
 ===================================================== */
-document.getElementById("contactForm").addEventListener("submit", function (e) {
+document.getElementById("contactForm").addEventListener("submit", function(e){
   e.preventDefault();
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
