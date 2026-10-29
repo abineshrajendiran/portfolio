@@ -11,15 +11,14 @@
 </head>
 
 <body>
-
 <!-- ================= NAVBAR ================= -->
 <nav>
   <div class="wrap nav-inner">
     <a href="#home" class="logo">
       <span class="logo-img" id="logoImg">
-        <img src="./abinesh.jpeg" alt="Abinesh R" onerror="this.remove();document.getElementById('logoImg').textContent=''">
+        <img src="./abinesh.jpeg" alt="Abinesh R" onerror="this.remove();document.getElementById('logoImg').textContent='AR'">
       </span>
-      <span class="logo-text">ABINESH R<small>BACKEND DEVELOPER</small></span>
+      <span class="logo-text">ABINESH R<small>Aspiring Full Stack Developer</small></span>
     </a>
     <button class="burger" onclick="toggleMenu()" aria-label="Menu"><i class="bi bi-list"></i></button>
     <ul class="menu" id="menu">
@@ -40,6 +39,7 @@
   <div class="wrap">
     <div class="hero">
       <div>
+        <!-- <div class="badge"><i></i> Available For Opportunities</div> -->
         <h1>Hi, I'm <span>Abinesh R</span></h1>
         <div class="typing" id="typing"></div>
         <p>Aspiring Software Developer with a strong foundation in Java, SQL, HTML, CSS, and JavaScript. Focused on developing responsive websites and efficient applications, solving real-world problems, and continuously enhancing technical skills to deliver quality software solutions.</p>
@@ -53,16 +53,16 @@
         <div class="frame">
           <img src="./abinesh.jpeg" alt="Abinesh R"
                onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-          <div class="initials"></div>
+          <div class="initials">AR</div>
         </div>
       </div>
     </div>
 
     <div class="stats reveal">
-      <div class="card stat"><b data-count="6">0</b><span>Projects Built</span></div>
+      <div class="card stat"><b data-count="7">0</b><span>Projects Built</span></div>
       <div class="card stat"><b data-count="6">0</b><span>Technologies Used</span></div>
       <div class="card stat"><b>8.28</b><span>CGPA</span></div>
-      <div class="card stat"><b data-count="7">0</b><span>Certifications</span></div>
+      <div class="card stat"><b data-count="10">0</b><span>Certifications</span></div>
     </div>
   </div>
 </section>
@@ -94,7 +94,7 @@
     <div class="skill-grid">
       <div class="card reveal">
         <h4>FRONTEND</h4>
-        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript(ES6+)</span>
       </div>
       <div class="card reveal">
         <h4>BACKEND</h4>
@@ -102,11 +102,11 @@
       </div>
       <div class="card reveal">
         <h4>DATABASE</h4>
-        <span class="tag">MySQL</span><span class="tag">Oracle SQL</span>
+        <span class="tag">MySQL</span><span class="tag">Oracle SQL</span><span class="tag">Joins</span><span class="tag">SubQueries</span>
       </div>
       <div class="card reveal">
         <h4>TOOLS</h4>
-        <span class="tag">Eclipse</span><span class="tag">VS Code</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Postman</span><span class="tag">Notepad++</span><span class="tag">Netlify</span><span class="tag">Vercel</span>
+        <span class="tag">Eclipse</span><span class="tag">VS Code</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Maven</span><span class="tag">MySQL Workbench</span><span class="tag">Postman</span><span class="tag">Notepad++</span><span class="tag">Netlify</span><span class="tag">Vercel</span>
       </div>
     </div>
   </div>
@@ -163,8 +163,7 @@
         <div id="voteResults"></div>
       </div>
     </div>
-
-    <!-- ========== 2. LIBRARY ========== -->
+     <!-- ========== 2. LIBRARY ========== -->
     <div class="card project reveal">
       <div class="project-head">
         <i class="bi bi-book big"></i>
@@ -210,7 +209,34 @@
       </div>
     </div>
 
-    <!-- ========== 3. DSK AGENCY ========== -->
+
+
+    <!-- ========== 3. Schools Websities ========== -->
+    <div class="card project web reveal">
+      <div class="mock">
+        <div class="mock-bar"><i></i><i></i><i></i><span>graabineshrajendiran-school.netlify.app</span></div>
+        <div class="mock-body">School Websities</div>
+      </div>
+      <div class="project-body">
+        <h3>School Websites <span class="new-tag">LIVE</span></h3>
+        <div class="stack">HTML • CSS • JavaScript</div>
+       <p>A responsive school website that presents the school, its academics, admissions and contact details in a clean, mobile-friendly layout.</p>
+<ul>
+  <li><b>Responsive Design</b> – works on mobile, tablet and desktop</li>
+  <li><b>About &amp; Academics</b> – clear overview of the school, courses and facilities</li>
+  <li><b>Admissions Section</b> – simple details on how students and parents can apply</li>
+  <li><b>Events &amp; Gallery</b> – highlights of school activities, achievements and campus life</li>
+  <li><b>Contact Details</b> – address, phone, email and map for easy enquiries</li>
+</ul>
+         <div class="btns">
+         <a class="btn fill" id="schoolwebsiteslive" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+<a class="btn line" id="schoolwebsitescode" target="_blank" rel="noopener"><i class="bi bi-github"></i> Source Code</a>
+        </div>
+      </div>
+    </div>
+
+
+<!-- ========== 4. DSK AGENCY ========== -->
     <div class="card project web reveal">
       <div class="mock">
         <div class="mock-bar"><i></i><i></i><i></i><span>dskagency.netlify.app</span></div>
@@ -232,7 +258,7 @@
       </div>
     </div>
 
-    <!-- ========== 4. AL BASHA SHOE MART ========== -->
+    <!-- ========== 5. AL BASHA SHOE MART ========== -->
     <div class="card project web reveal">
       <div class="mock">
         <div class="mock-bar"><i></i><i></i><i></i><span>albashashoesmarts.netlify.app</span></div>
@@ -254,7 +280,7 @@
       </div>
     </div>
 
-    <!-- ========== 5. NEW BASHA SHOE MART ========== -->
+    <!-- ========== 6. NEW BASHA SHOE MART ========== -->
     <div class="card project web reveal">
       <div class="mock">
         <div class="mock-bar"><i></i><i></i><i></i><span>new-basha-shoe-mart.netlify.app</span></div>
@@ -323,11 +349,13 @@
         <h4>Java Application Development Intern</h4>
         <div class="sub">Samcore Solution, Trichy</div>
         <p>Gained hands-on experience in Core Java, SQL and HTML by developing basic applications, writing database queries, designing web pages and helping with debugging. Worked with team members on assigned tasks and maintained project documentation.</p>
-        <ul class="exp-points">
-          <li>Developed basic Java applications using Core Java and Object-Oriented Programming (OOP) concepts.</li>
-          <li>Worked with SQL and MySQL to manage and retrieve database information.</li>
-          <li>Practiced debugging, error handling, and solving programming problems.</li>
-          <li>Gained practical knowledge of software development and database operations.</li>
+               <ul>
+                <li>Developed basic Java applications using Core Java and Object-Oriented Programming (OOP) concept </li>                <li> Worked with SQL and MySQL to manage and retrieve database information.</li>
+                 <li>Practiced debugging, error handling, and solving programming problems.</li>
+                 <li>Gained practical knowledge of software development and database operations.</li>
+                 <li>Worked with SQL and MySQL to manage and retrieve database information.</li>
+                 <li>Practiced debugging, error handling, and solving programming problems.</li>
+                 <li>Gained practical knowledge of software development and database operations.</li>
         </ul>
       </div>
     </div>
@@ -364,6 +392,8 @@
     <div class="title reveal"><h2>CERTIFI<span>CATIONS</span></h2><p>Courses and professional certifications</p></div>
     <div class="cert-grid">
       <div class="card cert reveal"><i class="bi bi-award"></i><h4>Java Developer</h4><p>Java Development Certification</p><a href="https://verify.onwingspan.com/" target="_blank" rel="noopener">View Certificate</a></div>
+       <div class="card cert reveal"><i class="bi bi-filetype-js"></i><h4>JavaScript</h4><p>Web Development</p><a href="https://verify.onwingspan.com/" target="_blank" rel="noopener">View Certificate</a></div>
+       <div class="card cert reveal"><i class="bi bi-filetype-css"></i><h4>CSS3</h4><p>Web development</p><a href="https://verify.onwingspan.com/" target="_blank" rel="noopener">View Certificate</a></div>
       <div class="card cert reveal"><i class="bi bi-shield-check"></i><h4>Introduction to Cybersecurity</h4><p>Cisco</p><a href="https://www.credly.com/badges/132a2a43-c98d-49f8-a8dc-b64df4b3a708" target="_blank" rel="noopener">View Certificate</a></div>
       <div class="card cert reveal"><i class="bi bi-bar-chart"></i><h4>Data Analytics</h4><p>Google</p><a href="https://www.credly.com/badges/a06860b7-7725-4b43-b1a1-3e15ed36643e" target="_blank" rel="noopener">View Certificate</a></div>
       <div class="card cert reveal"><i class="bi bi-cloud"></i><h4>Cloud Engineering</h4><p>Google</p><a href="https://www.credly.com/badges/7083fe43-1768-409d-b8df-3a15c762fef3" target="_blank" rel="noopener">View Certificate</a></div>
